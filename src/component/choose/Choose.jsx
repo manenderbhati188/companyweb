@@ -10,22 +10,22 @@ const Choose = () => {
           <div className={style.service}>
             <h2>Experience</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus, sunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, placeat!
+            Professional website is essential for making a strong first impression, enhancing user experience, and driving growth. At ButterFly Digital Solution we create visually appealing and functional websites tailored to your needs, ensuring they are mobile-friendly and optimized for search engines
             </p>
           </div>
           <div className={style.service}>
             <h2>Products</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus, sunt Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, placeat!
+            We offer a range of web solutions, including custom website design and development, e-commerce platforms, and content management systems. Our products are crafted to enhance your online presence, incorporating the latest technologies and best practices to meet your specific needs.
+
+
+
             </p>
           </div>
           <div className={style.service}>
-            <h2>Approach</h2>
+            <h2>Custom Products</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus, sunt Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, placeat!
+            we specialize in delivering tailor-made web solutions designed to meet your unique needs. Our custom products range from bespoke website designs to personalized e-commerce platforms, ensuring every detail aligns with your vision and goals.
             </p>
           </div>
         </div>
@@ -36,22 +36,28 @@ const Choose = () => {
           <div className={style.service}>
             <h2>Pricing</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus, sunt Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, placeat!
+            Our pricing is designed to be transparent and flexible, catering to a variety of needs and budgets. We offer competitive rates based on the complexity and scope of your project, with detailed quotes provided after an initial consultation. Whether you need a basic website or a fully customized solution, we ensure you receive high value and quality for your investment.
+
+
             </p>
           </div>
           <div className={style.service}>
             <h2>Delivery</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus, sunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, placeat!
+            We prioritize timely delivery without compromising quality. From initial design to final launch, we follow a structured process to ensure your project is completed on schedule. Our team keeps you informed at every stage, and we perform thorough testing to ensure your website functions
             </p>
           </div>
           <div className={style.service}>
             <h2>Approach</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus, sunt Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, placeat!
+            Our approach is centered around understanding your unique requirements and goals. We collaborate closely with you to develop a tailored strategy that aligns with your vision. By combining creativity with technical expertise, we create solutions that not only look great but also drive results. Your satisfaction is our top priority, and we’re committed to delivering exceptional outcomes.
+
+
+
+
+
+
+
             </p>
           </div>
         </div>

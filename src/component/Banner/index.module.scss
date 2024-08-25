@@ -1,0 +1,211 @@
+.nav {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  
+    .nav_img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.4);
+        user-select: none;
+        pointer-events: none;
+      }
+    }
+  
+    .header_line {
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 80px;
+      font-weight: 600;
+      user-select: none;
+  
+      .itservice {
+        color: #4169e1;
+      }
+  
+      .headertext {
+        font-size: 50px;
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+  
+      .header_context {
+        font-size: 30px;
+        font-weight: 300;
+        text-align: justify;
+        font-family: "Merriweather", serif;
+        font-style: italic;
+      }
+    }
+  
+    .nav_bar_header {
+      position: fixed;
+      top: 0;
+      z-index: 2;
+      padding: 20px;
+      color: white;
+      transition: background-color 0.3s, color 0.3s;
+      width: 100%;
+      display: flex;
+      height: 12%;
+      align-items: center;
+  
+      h1 {
+        margin: 0;
+      }
+  
+      @media screen and (max-width: 768px) {
+        .hamburger {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          font-size: 24px;
+          cursor: pointer;
+          z-index: 9999;
+        }
+      }
+    }
+  
+    .nav_service {
+      display: flex;
+      width: 80%;
+      justify-content: space-evenly;
+      font-weight: 700;
+  
+      .service {
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+  
+        &:hover {
+          color: #4169e1;
+          transform: scale(1.2);
+        }
+      }
+    }
+  
+    .nav_bar_logo {
+      margin-left: 50px;
+      cursor: pointer;
+  
+      img {
+        width: 100px;
+      }
+    }
+  
+    .nav_bar_button {
+      position: absolute;
+      right: 100px;
+      border-radius: 5px;
+      padding: 1px 3px;
+      background-color: #4169e1;
+      cursor: pointer;
+      transition: all 0.6s ease-in-out;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  
+    .scrolled {
+      background-color: white;
+      color: black;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+      .nav_service .service {
+        color: black;
+  
+        &:hover {
+          color: #4169e1;
+        }
+      }
+  
+      .nav_bar_logo img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      height: 50vh;
+      position: static;
+  
+      .nav_img {
+        height: 50%;
+      }
+  
+      .header_line {
+        top: 30%;
+        left: 20px;
+        text-align: center;
+  
+        .headertext {
+          font-size: 16px;
+          text-align: left;
+        }
+  
+        .header_context {
+          width: 60%;
+          font-size: 12px;
+        }
+      }
+  
+      .nav_bar_header {
+        padding: 10px;
+      }
+  
+      .hamburger {
+        font-size: 24px;
+        z-index: 9999;
+      }
+  
+      .mobile_menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 2;
+  
+        .mobile_service {
+          color: white;
+          padding: 10px 0;
+          border-bottom: 1px solid #fff;
+          transition: background-color 0.3s ease-in-out;
+  
+          &:hover {
+            background-color: #4169e1;
+          }
+        }
+  
+        @media screen and (max-width: 768px) {
+          height: 100%;
+          position: absolute;
+          top: 0;
+          background-color: #4169e1;
+  
+          .mobile_service {
+            position: relative;
+            top: 50px;
+          }
+        }
+      }
+    }
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+  }
+  

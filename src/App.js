@@ -1,10 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import HomePage from './pages/Homepage/Homepage';
+import Homepage from './pages/Homepage/Homepage';
+import Contact from './pages/Contact/Contact'
+import About from '../src/pages/About/About';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
     <div className="App">
-        <HomePage/>
+        <Routes>
+          <Route path="/Homepage" element={<Homepage />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+
     </div>
   );
 }

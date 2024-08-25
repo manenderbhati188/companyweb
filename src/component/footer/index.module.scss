@@ -38,8 +38,6 @@
     @media screen and (max-width: 768px) {
       flex-direction: column;
       text-align: center;
-      position: static; /* Change to static position on mobile */
-      bottom: auto; /* Remove bottom property */
       padding-bottom: 30px; /* Add padding at the bottom */
   
       .footer_pri {

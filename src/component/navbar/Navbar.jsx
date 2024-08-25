@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import style from "./index.module.scss";
 import logo from "../../assests/logo/website logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const service = ["Services", "Industries", "Clients", "About us", "Contact Us"];
+  const service = ["Homepage", "services", "about", "contact"];
   const [scroll, setScroll] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,6 +44,10 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleMenuClose = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div className={style.nav}>
       <div className={`${style.nav_bar_header} ${scroll ? style.scrolled : ""}`}>
@@ -57,7 +62,7 @@ const Navbar = () => {
           <div className={style.nav_service}>
             {service.map((item) => (
               <div className={style.service} key={item}>
-                {item}
+                <Link to={`/${item}`}>{item.toUpperCase()}</Link>
               </div>
             ))}
           </div>
@@ -67,32 +72,12 @@ const Navbar = () => {
       {isMobile && menuOpen && (
         <div className={style.mobile_menu}>
           {service.map((item) => (
-            <div className={style.mobile_service} key={item}>
-              {item}
-            </div>
-          ))}
+              <div className={style.mobile_service} key={item} onClick={handleMenuClose}>
+                <Link to={`/${item}`} onClick={handleMenuClose}>{item.toUpperCase()}</Link>
+              </div>
+            ))}
         </div>
       )}
-
-      <div className={style.nav_img}>
-        <img
-          src="https://img.freepik.com/free-photo/creative-designers-team-working-project-discussing-details_114579-2816.jpg?t=st=1720780754~exp=1720784354~hmac=1366076cae8623f19d89140c1ad1afcca5c872dda50e6dc62f107d964f19c283&w=1060"
-          alt="Header"
-        />
-      </div>
-
-      <div className={style.header_line}>
-        <div>
-          <h1 className={style.headertext}>
-            Your Trusted Partner in <span className={style.itservice}>IT Services</span> and Solutions
-          </h1>
-        </div>
-        <div>
-          <p className={style.header_context}>
-            We specialize in delivering comprehensive IT solutions tailored to your business needs.
-          </p>
-        </div>
-      </div>
     </div>
   );
 };
