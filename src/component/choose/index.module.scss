@@ -1,0 +1,117 @@
+.caintainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    // border: 1px solid black;
+    margin: 50px 0px;
+    .header{
+        // border:1px solid darkblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 2rem;
+        color:#4169E1;
+    }
+    .content{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        // border: 1px solid black;
+        margin: 80px 0px;
+        h2{
+            color: #4169E1;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 300;
+            // text-align: justify;
+        }
+        .data{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 25%;
+            // border: 1px solid black;           
+            list-style-type: none;
+            text-align: left;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 1.4rem;
+            @media screen and (max-width:768px) {
+                .service{
+                    h2{
+                        font-size: 16px;
+                    }
+                    p{
+                        display: none;
+                    
+                    }
+                }
+            }
+        }
+        .first{
+            text-align: right;
+            animation: comeleft 1s ease-in-out 1 forwards;
+            @keyframes comeleft {
+                0%{
+                    opacity: 0;
+                    transform: translateX(-100%);
+                }   
+                100%{
+                    opacity: 1;
+                    transform: translateX(0%);
+                }
+            }
+            @media screen and (max-width:768px) {
+                h2{
+                    text-align: left;
+                }
+            }
+        }
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column  ;
+            img{
+                height: 250px;
+                animation: blood 1.4s ease-in-out infinite  forwards alternate; 
+                @keyframes blood{
+                    0%{
+                        transform: translateY(0px);
+                    }
+                    100%{
+                        transform: translateY(40px);
+                    }
+                }
+            }
+            @media  screen and (max-width:768px) {
+                img{
+                    height: 150px;
+                }
+            }
+
+        }
+        .second{
+            text-align: right;
+            animation: comeright 1s ease-in-out 1 forwards;
+            @keyframes comeright {
+                0%{
+                    opacity: 0;
+                    transform: translateX(100%);
+                }   
+                100%{
+                    opacity: 1;
+                    transform: translateX(0%);
+                }
+            }
+        }
+        
+        
+       
+    }
+   
+}
