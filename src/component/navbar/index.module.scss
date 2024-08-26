@@ -132,9 +132,9 @@
       }
     }
 
-    .nav_bar_logo img {
-      filter: brightness(0) invert(1);
-    }
+    // .nav_bar_logo img {
+    //   filter: brightness(0) invert(1);
+    // }
   }
 
   @media screen and (max-width: 768px) {
@@ -192,7 +192,7 @@
 
       @media screen and (max-width: 768px) {
         height: 100%;
-        position: absolute;
+        position:fixed;
         top: 0;
         background-color: #4169e1;
 

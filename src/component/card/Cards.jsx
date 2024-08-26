@@ -51,7 +51,6 @@ const Cards = () => {
             <div className={style.header}>
               <h1 className={style.title}>{card.title}</h1>
               <div className={style.content}>{card.description}</div>
-              {/* <hr className={style.line} /> */}
             </div>
             
           </div>

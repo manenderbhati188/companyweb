@@ -1,0 +1,201 @@
+// Variables
+$primaryColor: #007bff;
+$secondaryColor: #ffffff;
+$textColor: #333;
+$textSecondaryColor: #666;
+$backgroundColor: #f9f9f9;
+$hoverColor: #ffffff;
+$hoverBgColor: $primaryColor;
+$borderRadius: 8px;
+
+// Main container
+.aboutPage {
+  font-family: 'Arial', sans-serif;
+  color: $textColor;
+  background-color: $backgroundColor;
+  padding: 20px;
+  margin-top: 70px;
+
+  // Header section
+  .aboutHeader {
+    background-color: $secondaryColor;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid $primaryColor;
+
+    h1 {
+      color: $primaryColor;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: $textSecondaryColor;
+    }
+  }
+
+
+  .aboutCompany {
+    margin: 40px 0;
+    .contentWrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .leftSide,
+      .rightSide {
+        width: 100%;
+        max-width: 100%; // Full width for mobile screens
+      }
+
+      .leftSide {
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: $borderRadius;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+          border: 2px solid $primaryColor;
+        }
+      }
+
+      .rightSide {
+        h2 {
+          font-size: 2rem;
+          color: $primaryColor;
+          margin-bottom: 20px;
+          font-weight: bold;
+          border-bottom: 2px solid $primaryColor;
+          padding-bottom: 10px;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.6;
+          margin-bottom: 20px;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          color: $primaryColor;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+
+        ul {
+          list-style-type: disc;
+          padding-left: 20px;
+
+          li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+          }
+        }
+
+        blockquote {
+          border-left: 4px solid $primaryColor;
+          padding-left: 20px;
+          margin: 20px 0;
+          font-style: italic;
+          color: $textSecondaryColor;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  // Call to action
+  .callToAction {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: $primaryColor;
+    color: $hoverColor;
+    border-radius: $borderRadius;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .contactButton {
+      background-color: $hoverColor;
+      color: $primaryColor;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: $borderRadius;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+
+      &:hover {
+        background-color: lighten($primaryColor, 10%);
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+// Media Queries for Responsiveness
+@media (max-width: 768px) {
+  .aboutCompany {
+    .contentWrapper {
+      flex-direction: column;
+      flex-wrap: nowrap;
+
+      .leftSide,
+      .rightSide {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .leftSide {
+        img {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutHeader {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .aboutCompany {
+    .rightSide {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p,
+      h3 {
+        font-size: 0.9rem;
+      }
+
+      ul li {
+        font-size: 0.9rem;
+      }
+
+      blockquote {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

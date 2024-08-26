@@ -4,7 +4,7 @@ import logo from "../../assests/logo/website logo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const service = ["Homepage", "services", "about", "contact"];
+  const service = ["Home", "services", "about", "contact"];
   const [scroll, setScroll] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
